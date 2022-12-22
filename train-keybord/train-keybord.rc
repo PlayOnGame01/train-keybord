@@ -1,0 +1,189 @@
+// Microsoft Visual C++ generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "winres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// Russian (Russia) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_RUS)
+LANGUAGE LANG_RUSSIAN, SUBLANG_DEFAULT
+#pragma code_page(1251)
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE 
+BEGIN
+    "#include ""winres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE 
+BEGIN
+    "\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_DIALOG1 DIALOGEX 0, 0, 167, 173
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Dialog"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    PUSHBUTTON      "Начать ",IDC_START,7,17,50,14
+    PUSHBUTTON      "Рекорд",IDC_BUTTON2,7,36,50,14
+    LTEXT           "Ваш рекорд",IDC_STATIC,7,126,75,8
+    GROUPBOX        "Выбрать уровень",IDC_STATIC,7,52,91,58
+    CONTROL         "Level 1",IDC_RADIO1,"Button",BS_AUTORADIOBUTTON,8,65,39,10
+    CONTROL         "Level 2 ",IDC_RADIO2,"Button",BS_AUTORADIOBUTTON,8,79,41,10
+    CONTROL         "Level 3",IDC_RADIO3,"Button",BS_AUTORADIOBUTTON,8,93,39,10
+    EDITTEXT        IDC_EDIT1,7,140,77,14,ES_AUTOHSCROLL | ES_READONLY
+END
+
+IDD_DIALOG2 DIALOGEX 0, 0, 259, 176
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Dialog"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    PUSHBUTTON      "1",IDC_BUTTON1,7,74,20,16
+    PUSHBUTTON      "2",IDC_BUTTON4,28,74,20,16
+    PUSHBUTTON      "3",IDC_BUTTON5,48,74,20,16
+    PUSHBUTTON      "4",IDC_BUTTON6,68,74,20,16
+    PUSHBUTTON      "5",IDC_BUTTON7,88,74,20,16
+    PUSHBUTTON      "6",IDC_BUTTON8,108,74,20,16
+    PUSHBUTTON      "7",IDC_BUTTON9,128,74,20,16
+    PUSHBUTTON      "8",IDC_BUTTON10,148,74,20,16
+    PUSHBUTTON      "9",IDC_BUTTON11,168,74,20,16
+    PUSHBUTTON      "0",IDC_BUTTON12,188,74,20,16
+    PUSHBUTTON      "-",IDC_BUTTON13,208,74,20,16
+    PUSHBUTTON      "+",IDC_BUTTON14,228,74,20,16
+    PUSHBUTTON      "Q",IDC_BUTTON15,18,91,20,16
+    PUSHBUTTON      "W",IDC_BUTTON16,40,91,20,16
+    PUSHBUTTON      "E",IDC_BUTTON17,63,91,20,16
+    PUSHBUTTON      "R",IDC_BUTTON18,86,91,20,16
+    PUSHBUTTON      "T",IDC_BUTTON19,109,91,20,16
+    PUSHBUTTON      "Y",IDC_BUTTON20,132,91,20,16
+    PUSHBUTTON      "U",IDC_BUTTON21,153,91,20,16
+    PUSHBUTTON      "I",IDC_BUTTON22,176,91,20,16
+    PUSHBUTTON      "O",IDC_BUTTON23,198,91,20,16
+    PUSHBUTTON      "P",IDC_BUTTON24,219,91,20,16
+    PUSHBUTTON      "A",IDC_BUTTON26,28,108,20,16
+    PUSHBUTTON      "S",IDC_BUTTON27,49,108,20,16
+    PUSHBUTTON      "D",IDC_BUTTON28,71,108,20,16
+    PUSHBUTTON      "F",IDC_BUTTON29,91,108,20,16
+    PUSHBUTTON      "G",IDC_BUTTON30,111,108,20,16
+    PUSHBUTTON      "H",IDC_BUTTON31,133,108,20,16
+    PUSHBUTTON      "J",IDC_BUTTON32,153,108,20,16
+    PUSHBUTTON      "K",IDC_BUTTON33,174,108,20,16
+    PUSHBUTTON      "L",IDC_BUTTON34,195,108,20,16
+    PUSHBUTTON      "|",IDC_BUTTON35,215,108,20,16
+    PUSHBUTTON      "Z",IDC_BUTTON37,44,127,20,16
+    PUSHBUTTON      "X",IDC_BUTTON38,66,127,20,16
+    PUSHBUTTON      "C",IDC_BUTTON39,88,127,20,16
+    PUSHBUTTON      "V",IDC_BUTTON40,109,127,20,16
+    PUSHBUTTON      "B",IDC_BUTTON41,131,127,20,16
+    PUSHBUTTON      "N",IDC_BUTTON42,152,127,20,16
+    PUSHBUTTON      "M",IDC_BUTTON43,174,127,20,16
+    PUSHBUTTON      "PROBEL",IDC_BUTTON51,54,145,148,16
+    LTEXT           "Время",IDC_STATIC,15,21,21,8
+    LTEXT           "Уровень",IDC_STATIC,150,21,30,8
+    EDITTEXT        IDC_ENTERTEXT,10,54,188,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_TEXT,9,39,234,14,ES_AUTOHSCROLL | ES_READONLY
+    EDITTEXT        IDC_TIME,36,17,80,14,ES_AUTOHSCROLL | ES_READONLY
+    EDITTEXT        IDC_LEVEL,180,18,44,14,ES_AUTOHSCROLL | ES_READONLY
+    PUSHBUTTON      "Finish",IDC_BUTTON55,198,54,50,14
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO
+BEGIN
+    IDD_DIALOG1, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 160
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 166
+    END
+
+    IDD_DIALOG2, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 252
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 169
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// AFX_DIALOG_LAYOUT
+//
+
+IDD_DIALOG1 AFX_DIALOG_LAYOUT
+BEGIN
+    0
+END
+
+IDD_DIALOG2 AFX_DIALOG_LAYOUT
+BEGIN
+    0
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDI_ICON1               ICON                    "C:\\Users\\ADMIN\\OneDrive\\Рабочий стол\\train-keybord\\spooky_scary_moon_night_halloween_icon_229371.ico"
+
+#endif    // Russian (Russia) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+
