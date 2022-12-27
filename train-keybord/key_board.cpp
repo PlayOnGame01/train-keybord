@@ -1,11 +1,9 @@
-#include<windows.h>
-#include <windowsX.h>
-#include <commctrl.h>
+#include <windows.h>
 #include <tchar.h>
 #include <conio.h>
 #include <time.h>
+#include <sal.h>
 #include"resource.h"
-#pragma comment(lib,"comctl32")
 #define WM_ICON WM_APP
 #define ID_TRAYICON WM_USER
 #define WM_USER_SHELLICON (WM_USER + 1)
@@ -33,12 +31,12 @@ TCHAR str_timer[60];
 int points = 0;
 int error = 0;
 
-TCHAR lvl1[] = TEXT("asas ssaa assa aass sasa saas");
-TCHAR lvl2[] = TEXT("dfdf ddff ffdd fddf fdfd dffd");
-TCHAR lvl3[] = TEXT("прпр рпрп ппрр ррпп рппр пррп");
+TCHAR lvl1[] = TEXT("af fa ffa aaf");
+TCHAR lvl2[] = TEXT("Hello world how are you?");
+TCHAR lvl3[] = TEXT("You go for a walk or use your car? Do you like water?");
 TCHAR str_lvl[10];
 
-int WINAPI _tWinMain(HINSTANCE hInstance, HINSTANCE hPrevInst, LPTSTR lpszCmdLine, int nCmdShow) {
+int WINAPI _wWinMain(HINSTANCE hInstance, HINSTANCE hPrevInst, LPTSTR lpszCmdLine, int nCmdShow) {
 	return DialogBox(hInstance, MAKEINTRESOURCE(IDD_DIALOG1), NULL, (DLGPROC)DlgProc);
 }
 
@@ -104,10 +102,9 @@ BOOL CALLBACK DlgProc(HWND hWnd, UINT message, WPARAM wParam, LPARAM lParam)
 		pNID->uCallbackMessage = WM_ICON;
 		pNID->uFlags = NIF_TIP | NIF_ICON | NIF_MESSAGE | NIF_INFO;
 		pNID->uID = ID_TRAYICON;
-
 		TCHAR GUID[] = TEXT("{D98CD3E0-670D-4def-9B74-99FE6E683BFD}");
 		hMutex = CreateMutex(NULL, FALSE, GUID);
-		DWORD dwAnswer = WaitForSingleObject(hMutex, 0);
+		DWORD dwAnswer = (hMutex, 0);
 		if (dwAnswer == WAIT_TIMEOUT) {
 			MessageBox(hWnd, TEXT("Стоп не льзя запускать больше одного, а то по попе бо-бо!!!"), TEXT("Тренировка пальчиков"), MB_OK | MB_ICONINFORMATION);
 			EndDialog(hWnd, 0);
